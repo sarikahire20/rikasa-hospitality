@@ -1,1 +1,1 @@
-# rikasa-hospitality
+# https://rikasagroup.netlify.app/
