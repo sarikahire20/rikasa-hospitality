@@ -1,1 +1,1 @@
-# https://rikasagroup.netlify.app/
+# https://sarikahire20.github.io/rikasa-hospitality/
