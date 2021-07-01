@@ -1,0 +1,441 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-family: "Whitney Light";
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .btn {
+    font-family: "Whitney Medium";
+  }
+  
+  .html {
+    font-size: 80%;
+  }
+  /* --------------HERO-SECTION---------------- */
+  
+  .hero {
+ background-color: #121819;
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+    
+  }
+
+  
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1d2020;
+    opacity: 0.65;
+}
+
+  
+  
+  .main-header {
+    height: 8rem;
+  }
+  
+  .container {
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 0 3.4rem;
+  }
+  
+  .name {
+    margin-right: 65rem;
+    color: #fff;
+    -webkit-text-stroke: 0.2px black;
+    -webkit-text-fill-color: white;
+    margin-top: -2%;
+  
+  }
+
+  .name h1{
+      font-weight: 900;
+      position: absolute;
+       transform: translate(-50%, -50%);
+       margin-left: 3rem;
+    color: white;
+    align-self: left; 
+    font-size: 22px;
+  }
+
+  .name p{
+      position: absolute;
+       transform: translate(-50%, -50%);
+       margin-left: 2rem;
+    color: white;
+    align-self: left; 
+    margin-top: 2%;
+    font-size: 15px;
+  }
+
+  .main-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-left: 22rem;
+    float: right;
+  }
+  
+  
+  
+  .nav-list a {
+    margin-top: 4rem;
+  transform: translate(-50%, -50%);
+  margin-left: 0.2rem;
+color: white;
+align-self: left; 
+font-size: 22px;
+  }
+  
+  .nav-list a:first-child{
+    color: #fff;
+  }
+  
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.4s linear;
+  }
+  
+  nav a:hover:before{
+    width: 100%;
+  
+  }
+  
+   
+
+
+  #rotate{
+    vertical-align:top;
+    transform:rotate(7deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */}
+    
+  
+  button,
+  input{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    cursor:pointer;
+    height:50px;
+    min-width: 100px;
+    position:relative;
+    border-radius: 5px;
+    padding: 0 10px;	
+    font-size: 20px;
+  }
+  
+  
+  body{background-color:#222;}
+  
+/* ----------------------------- */
+.support{
+    background-color: #121819;
+    height: 100vh;
+}
+
+.support-title{
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+ "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 200;
+font-size: 4rem;
+color: white;
+text-align: left;
+margin-left: 4rem;
+padding-top: 20rem;
+position: absolute;
+transform: translate(-50%, -50%);
+}
+
+.support-text{
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+     "Segoe UI Symbol", "Noto Color Emoji";
+     font-weight: 500;
+
+     width: 60%;
+    margin-left: 35rem;
+    position: absolute;
+     transform: translate(-50%, -50%);
+     margin-top: 26rem;
+     line-height: 3.5rem;
+  
+}
+
+
+.mail{
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+     "Segoe UI Symbol", "Noto Color Emoji";
+     font-weight: 500;
+  margin-top: 20rem;
+  text-decoration: underline;
+ margin-left: 83%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* --------------contactbox------------- */
+.forms{
+    background-color: #121819;
+}
+
+
+
+.row1 ,.row2 ,.row3 ,.row4 ,.row5{
+    font-weight: 200;
+   color: white;
+padding-top: 4rem;
+margin-left: 5rem;
+font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+ "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.name_,.mail1,.phone,.cont
+{
+    margin-left: 5rem;
+    width: 60%;
+    border: none;
+    height: 60px;
+   border-bottom: 2px solid white;
+    background-color: #121819;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+     "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.msg{
+    margin-left: 5rem;
+    width: 60%;
+
+    border: none;
+    height: 150px;
+   border-bottom: 2px solid white;
+    background-color: #121819;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+     "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.submit{
+    border: none;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+     "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.submit:hover{
+    color: white;
+    background-color: #273437;
+}
+
+
+
+/* -----------------footer------------------- */
+
+
+.footer {
+    background-color: #121819;
+    padding: 8rem 0 6.4rem 0;
+    padding-top: 10rem;
+}
+
+.main-footer {
+  padding: 0 2.4rem;
+}
+
+.section-1 h1 {
+    font-weight: 900;
+    position: absolute;
+     transform: translate(-50%, -50%);
+     margin-left: 7rem;
+  color: white;
+  align-self: left; 
+  font-size: 22px;
+  margin-top: -2%;
+  }
+  
+  .section-1 p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 5.5rem;
+ color: white;
+ align-self: left;
+ font-size: 15px
+  }
+
+
+.rikasa {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.rg-logo{
+  width: 3.2rem;
+    height: 3rem;
+    margin-right: 0.8rem;
+    box-shadow: 0 0 4px white;
+    
+  
+}
+
+
+
+.nav-list {
+    display: none;
+  }
+  
+  .nav-items-right {
+    display: inline-block;
+    align-items: right;
+  }
+  
+  
+  .nav-list {
+    display: flex;
+    margin-left: 20rem;
+    float: right;
+    margin-top:-1rem;
+  }
+  
+  
+  
+  .nav-list a {
+     transform: translate(-50%, -50%);
+     margin-left: 0.2rem;
+  color: white;
+  align-self: left; 
+  font-size: 22px;
+  
+    
+  }
+  
+  .nav-list a:first-child{
+    color: #fff;
+  }
+  
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+  }
+  
+
+
+  
+  /* -------------footer-section-2----------- */
+  
+  .footer-list {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left: 15%;
+    
+  }
+  
+  
+.list-b ul a ,  .list-a ul a {
+    color: #fff;
+    margin-top: 0.8rem;
+    height: 2.4rem;
+    
+  
+  }
+  
+  .list-b{
+      margin-left: 30%;
+      
+  }
+
+
+  .list-a{
+      margin-right: 30%;
+  }
+
+  .list-a ul a:hover,
+ .list-b ul a:hover
+{
+    text-decoration: underline;
+  }
+  
+  .list-1
+ {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }

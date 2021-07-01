@@ -1,0 +1,567 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-family: "Whitney Light";
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .btn {
+    font-family: "Whitney Medium";
+  }
+  
+  .html {
+    font-size: 80%;
+  }
+  /* --------------HERO-SECTION---------------- */
+  
+  .hero {
+    background-image: url(./images/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+    
+  }
+
+  
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1d2020;
+    opacity: 0.65;
+}
+
+  
+  
+  .main-header {
+    height: 8rem;
+  }
+  
+  .container {
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 0 3.4rem;
+  }
+  
+  .name {
+    margin-right: 65rem;
+    color: #fff;
+    -webkit-text-stroke: 0.2px black;
+    -webkit-text-fill-color: white;
+    margin-top: -2%;
+  
+  }
+
+  .name h1{
+      font-weight: 900;
+      position: absolute;
+       transform: translate(-50%, -50%);
+       margin-left: 3rem;
+    color: white;
+    align-self: left; 
+    font-size: 22px;
+  }
+
+  .name p{
+      position: absolute;
+       transform: translate(-50%, -50%);
+       margin-left: 2rem;
+    color: white;
+    align-self: left; 
+    margin-top: 2%;
+    font-size: 15px;
+  }
+
+  .main-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: none;
+  }
+  
+  .nav-items-right {
+    display: inline-block;
+    align-items: right;
+  }
+  
+  
+  .nav-list {
+    display: flex;
+    margin-left: 30rem;
+    float: right;
+  }
+  
+  
+  
+  .nav-list a {
+    margin-top: 4rem;
+  transform: translate(-50%, -50%);
+  margin-left: 0.2rem;
+color: white;
+align-self: left; 
+font-size: 22px;
+  }
+  
+  .nav-list a:first-child{
+    color: #fff;
+  }
+  
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.4s linear;
+  }
+  
+  nav a:hover:before{
+    width: 100%;
+  
+  }
+  
+   
+  .hero-content {
+    color: #fff;
+    padding: 5.6rem 0;
+  }
+  
+  .primary-title {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    align-self: left; 
+    font-size: 49px;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+margin-left: 3rem;
+margin-top: 3%;
+}
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+
+
+  #rotate{
+    vertical-align:top;
+    transform:rotate(7deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */}
+    
+  
+  button,
+  input{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    cursor:pointer;
+    height:50px;
+    min-width: 100px;
+    position:relative;
+    border-radius: 5px;
+    padding: 0 10px;	
+    font-size: 20px;
+  }
+  
+  
+  body{background-color:#222;}
+  
+  /* ----------------------searcbox-------------------- */
+  .select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}   
+ .select select {
+        font-family: 'Arial';
+        font-size: 1.5rem;
+        display: inline-block;
+        width: 50%;
+        cursor: pointer;
+        margin-top: 10rem;
+        margin-left: -5%;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 0px;
+        background: transparent;
+        color: #7b7b7b;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select:hover {
+            color: #7b7b7b;
+            
+        }
+
+      .select title{
+        color: white;
+      }
+        .select select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+    margin-top: 9rem;
+    margin-left: 38%;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #7b7b7b;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+.line-seperator{
+  background-color: white;
+  border: 0;
+  height: 1px;
+  width: 38%;
+  content: "";
+  margin-left: -5%;
+  margin-top:-1rem ;
+  position: absolute;
+  border-bottom: 2px solid #fff;
+}
+
+  /* ------------panels------------------ */
+.panel{
+    background-color: #1d2020;
+    padding: 3rem 0;
+}
+  .card{
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+  margin-top: 5rem;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgb(255, 255, 255), 0 4px 8px rgb(255, 255, 255);
+}
+
+.card h3{
+  font-weight: 600;
+}
+
+
+
+.card-1{
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #1d2020!important;
+}
+
+.card-2{
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #1d2020!important;
+    height: 114px;
+}
+
+.legend-text{
+  width: 130%;
+}
+.card-3{
+         background-repeat: no-repeat;
+       color: white;
+            background-color: #1d2020!important;
+            height: 114px;
+}
+
+.gift-text{
+  width: 130%;
+}
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+} 
+
+
+/* -------------------about--------------- */
+
+.about{
+    background-color: #1d2020;
+    padding: 16rem 0;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.secondary-title{
+    font-weight: 300!important;
+    text-align: center;
+    color: white;  
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.text-group p{
+  color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 1.55;
+    margin-top: 5px;
+}
+ 
+/* -----------------carousel--------------- */
+
+.view{
+    padding: 100px 100px 0px 100px;
+    align-self: center;
+    background-color: #1d2020;
+}
+    
+.carousel-control-prev{
+    padding-left: 130px;
+}
+
+.carousel-control-next{
+    padding-right: 130px;
+}
+
+  
+.mask::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    bottom: 0px;
+    left: 100px;
+    background-color: #1d2020;
+    opacity: 0.45;
+}
+
+/* ----------------------cities------------------- */
+
+.container-fluid{
+    background-color: #1d2020;
+    padding-top: 15rem;
+    text-align: center;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding-bottom: 20rem;
+}
+
+.col{
+    color: white;
+    border: 2px solid transparent;
+    font-size: 15px;
+}
+
+
+
+   /* -------------seperator------------- */
+  
+   .line-seperator1 {
+    background-color: white;
+    border: 0;
+    height: 0.1px;
+    margin-top: -8%;
+  }
+
+
+  
+/* -----------------footer------------------- */
+
+
+.footer {
+    background-color: #1d2020;
+    padding: 8rem 0 6.4rem 0;
+}
+
+.main-footer {
+  padding: 0 2.4rem;
+}
+
+.section-1 h1 {
+    font-weight: 900;
+    position: absolute;
+     transform: translate(-50%, -50%);
+     margin-left: 7rem;
+  color: white;
+  align-self: left; 
+  font-size: 22px;
+  margin-top: -2%;
+  }
+  
+  .section-1 p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 5.5rem;
+ color: white;
+ align-self: left;
+ font-size: 15px
+  }
+
+
+.rikasa {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.rg-logo{
+  width: 3.2rem;
+    height: 3rem;
+    margin-right: 0.8rem;
+    box-shadow: 0 0 4px white;
+    
+  
+}
+
+
+
+.nav-list {
+    display: none;
+  }
+  
+  .nav-items-right {
+    display: inline-block;
+    align-items: right;
+  }
+  
+  
+  .nav-list {
+    display: flex;
+    margin-left: 20rem;
+    float: right;
+    margin-top:-1rem;
+  }
+  
+  
+  
+  .nav-list a {
+     transform: translate(-50%, -50%);
+     margin-left: 0.2rem;
+  color: white;
+  align-self: left; 
+  font-size: 22px;
+  
+    
+  }
+  
+  .nav-list a:first-child{
+    color: #fff;
+  }
+  
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+  }
+  
+
+
+  
+  /* -------------footer-section-2----------- */
+  
+  .footer-list {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left: 15%;
+    
+  }
+  
+  
+.list-b ul a ,  .list-a ul a {
+    color: #fff;
+    margin-top: 0.8rem;
+    height: 2.4rem;
+    
+  
+  }
+  
+  .list-b{
+      margin-left: 30%;
+      
+  }
+
+
+  .list-a{
+      margin-right: 30%;
+  }
+
+  .list-a ul a:hover,
+ .list-b ul a:hover
+{
+    text-decoration: underline;
+  }
+  
+  .list-1
+ {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }

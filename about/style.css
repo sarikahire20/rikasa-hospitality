@@ -1,0 +1,394 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-family: "Whitney Light";
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .btn {
+    font-family: "Whitney Medium";
+  }
+  
+  .html {
+    font-size: 80%;
+  }
+  /* --------------HERO-SECTION---------------- */
+  
+  .hero {
+    background-image: url(./bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+    
+  }
+
+  
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1d2020;
+    opacity: 0.55;
+}
+
+  
+  
+  .main-header {
+    height: 8rem;
+  }
+  
+  .container {
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 0 3.4rem;
+  }
+  
+  .name {
+    margin-right: 65rem;
+    color: #fff;
+    -webkit-text-stroke: 0.2px black;
+    -webkit-text-fill-color: white;
+    margin-top: -2%;
+  
+  }
+
+  .name h1{
+      font-weight: 900;
+      position: absolute;
+       transform: translate(-50%, -50%);
+       margin-left: 3rem;
+    color: white;
+    align-self: left; 
+    font-size: 22px;
+  }
+
+  .name p{
+      position: absolute;
+       transform: translate(-50%, -50%);
+       margin-left: 2rem;
+    color: white;
+    align-self: left; 
+    margin-top: 2%;
+    font-size: 15px;
+  }
+
+  .main-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: none;
+  }
+ 
+  
+  .nav-list {
+    display: flex;
+    
+    float: right;
+  }
+  
+  
+  
+  .nav-list a {
+    margin-top: 4rem;
+  transform: translate(-50%, -50%);
+  margin-left: 0.2rem;
+color: white;
+align-self: left; 
+font-size: 22px;
+  }
+  
+  .nav-list a:first-child{
+    color: #fff;
+  }
+  
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.4s linear;
+  }
+  
+  nav a:hover:before{
+    width: 100%;
+  
+  }
+  
+   
+  .hero-content {
+    color: #fff;
+    padding: 5.6rem 0;
+  }
+  
+  .primary-title {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 49px;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+    margin-left: 23rem;
+margin-top: 2%;
+
+    font-size: 6rem;
+    white-space: nowrap;
+  }
+
+.career{
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-top: 15rem;
+    transform: translate(-50%, -50%);
+    margin-left: 52rem;
+  color: white;
+  align-self: left; 
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.career a:first-child{
+    color: #fff;
+  }
+  
+  .career:hover{
+      text-decoration: none;
+      color: white;
+  }
+
+.career:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.8s linear;
+    
+  }
+  
+.career:hover:before{
+    width: 100%;
+
+  }
+
+  .about{
+      background-color: #121819;
+      height: 100vh;
+  }
+
+  .about-title{
+      margin-left: 20rem;
+      font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+ "Segoe UI Symbol", "Noto Color Emoji";
+color: white;
+font-size: 1.5rem;
+font-weight: 500;
+padding-top: 8rem;
+}
+
+.about-text{
+    margin-left: 20rem;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol", "Noto Color Emoji";
+color: white;
+font-size: 1.5rem;
+font-weight: 200;
+padding-top: 5rem;
+width: 70%;
+}
+
+
+
+   /* -------------seperator------------- */
+  
+   .line-seperator1 {
+    background-color: white;
+    border: 0;
+    height: 0.1px;
+    margin-top: -8%;
+  }
+
+
+  
+/* -----------------footer------------------- */
+
+
+.footer {
+    background-color: #121819;
+    padding: 8rem 0 6.4rem 0;
+}
+
+.main-footer {
+  padding: 0 2.4rem;
+}
+
+.section-1 h1 {
+    font-weight: 900;
+    position: absolute;
+     transform: translate(-50%, -50%);
+     margin-left: 7rem;
+  color: white;
+  align-self: left; 
+  font-size: 22px;
+  margin-top: -2%;
+  }
+  
+  .section-1 p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 5.5rem;
+ color: white;
+ align-self: left;
+ font-size: 15px
+  }
+
+
+.rikasa {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.rg-logo{
+  width: 3.2rem;
+    height: 3rem;
+    margin-right: 0.8rem;
+    box-shadow: 0 0 4px white;
+    
+  
+}
+
+
+
+.nav-list {
+    display: none;
+  }
+  
+  .nav-items-right {
+    display: inline-block;
+    align-items: right;
+  }
+  
+  
+  .nav-list {
+    display: flex;
+    margin-left: 20rem;
+    float: right;
+    margin-top:-1rem;
+  }
+  
+  
+  
+  .nav-list a {
+     transform: translate(-50%, -50%);
+     margin-left: 0.2rem;
+  color: white;
+  align-self: left; 
+  font-size: 22px;
+  
+    
+  }
+  
+  .nav-list a:first-child{
+    color: #fff;
+  }
+  
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+  }
+  
+
+
+  
+  /* -------------footer-section-2----------- */
+  
+  .footer-list {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left: 15%;
+    
+  }
+  
+  
+.list-b ul a ,  .list-a ul a {
+    color: #fff;
+    margin-top: 0.8rem;
+    height: 2.4rem;
+    
+  
+  }
+  
+  .list-b{
+      margin-left: 30%;
+      
+  }
+
+
+  .list-a{
+      margin-right: 30%;
+  }
+
+  .list-a ul a:hover,
+ .list-b ul a:hover
+{
+    text-decoration: underline;
+  }
+  
+  .list-1
+ {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
